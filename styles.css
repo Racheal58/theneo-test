@@ -474,7 +474,12 @@ button {
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-container {
+  object-fit: contain;
 }
 
 .address-and-contact {
