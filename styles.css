@@ -560,3 +560,91 @@ address {
   line-height: 18px;
   color: #595959;
 }
+
+@media screen and (max-width: 1080px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .nav-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  header,
+  .header-bg {
+    height: 550px;
+    padding: 20px;
+  }
+
+  .hero-text {
+    margin: 10px auto;
+  }
+
+  .row {
+    padding: 2rem;
+  }
+
+  .build-container {
+    padding: 2rem;
+  }
+
+  .engagement-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0;
+    text-align: center;
+  }
+  
+  .engagement-container ul {
+    align-items: center;
+  }
+
+  .industry-cards {
+    flex-wrap: wrap;
+  }
+
+  .industry-container {
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    max-width: 100%;
+  }
+
+  .sign-up-container {
+    padding: 0 2rem;
+  }
+
+  .explore-header {
+    text-align: center;
+  }
+
+  .footer {
+    padding: 8% 8% 40px 8%;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address-and-contact {
+    margin-top: 30px;
+  }
+}
