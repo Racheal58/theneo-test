@@ -15,23 +15,49 @@ body.light-mode {
   color: #275b81;
 }
 
+.container {
+  width: 100%;
+}
+
+.row {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.col {
+  flex: 1;
+}
+
+header {
+  color: #fff;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-bg {
+  background: url("./assets/daisy_chain.png"),
+    url("./assets/hero_background.png"),
+    linear-gradient(360deg, #fff -39.63%, #fff 34.1%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  border-bottom-left-radius: 50% 200px;
+  border-bottom-right-radius: 50% 200px;
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 160%;
+  z-index: -1;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
   font-size: 16px;
   padding: 24px 83px;
-}
-
-header {
-  background-image: url("./assets/background_curve.png"), url("./assets/daisy_chain.png"),
-    url("./assets/hero_background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center, center, bottom center;
-  height: 450px;
-  color: #fff;
 }
 
 .nav-links {
@@ -144,7 +170,8 @@ header {
 section .sub-hero-text {
   text-align: center;
   width: 870px;
-  margin: 29px auto;
+  max-width: 100%;
+  padding: 30px 0;
 }
 
 .sub-hero-text h1 {
@@ -163,10 +190,9 @@ section .sub-hero-text {
   flex-direction: column;
 }
 
-.engagment-container {
+.engagement-container {
   display: flex;
   gap: 100px;
-  flex-wrap: wrap;
   justify-content: center;
   padding-top: 30px;
 }
@@ -185,11 +211,7 @@ h5 {
   margin-bottom: 50px;
 }
 
-.engagament-sections {
-  max-width: 509px;
-}
-
-.engagament-sections p {
+.engagement-sections p {
   color: #595959;
   font-size: 16px;
   letter-spacing: -0.01em;
@@ -197,12 +219,12 @@ h5 {
   line-height: 25.6px;
 }
 
-.engagament-sections hr {
+.engagement-sections hr {
   margin: 32px 0;
   border: 1px solid #dfe6ec;
 }
 
-.engagament-sections ul {
+.engagement-sections ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -212,7 +234,7 @@ h5 {
   color: #595959;
 }
 
-.engagament-sections li::marker {
+.engagement-sections li::marker {
   color: #dfe6ec;
 }
 
@@ -235,8 +257,6 @@ h5 {
   align-items: flex-start;
   padding: 65px 55px;
   width: 504.49px;
-  height: 546px;
-
   background: #ffffff;
   border-radius: 20px;
   color: #595959;
@@ -283,21 +303,31 @@ button {
   gap: 6px;
 }
 
-.industry-container {
-  background: url("./assets/background_curve_white.png"),
-    linear-gradient(360deg, rgba(75, 179, 255, 0.62) -39.63%, #f4f8fa 34.1%);
-  background-repeat: no-repeat;
-  background-size: contain, cover;
-  background-position: bottom;
+.industry-section {
   padding-top: 100px;
-  padding-bottom: 127px;
   position: relative;
+  overflow: hidden;
+  background-color: #fff;
 }
 
-.industry-container-default-styles {
-  max-width: fit-content;
-  margin-inline: auto;
-  padding-bottom: 250px;
+.industry-section-bg {
+  background: linear-gradient(
+    360deg,
+    rgba(75, 179, 255, 0.62) -39.63%,
+    #f4f8fa 34.1%
+  );
+  width: 160%;
+  border-bottom-left-radius: 50% 200px;
+  border-bottom-right-radius: 50% 200px;
+  position: absolute;
+  left: -30%;
+  top: 0;
+  height: 100%;
+}
+
+.industry-container {
+  position: relative;
+  z-index: 1;
 }
 
 .industry-cards {
@@ -305,8 +335,6 @@ button {
   flex-direction: row;
   justify-content: center;
   gap: 16px;
-  width: 1068px;
-  height: 308px;
   margin-bottom: 50px;
 }
 
@@ -343,7 +371,7 @@ button {
 
 .industry-container hr {
   border: 1px solid #275b81;
-  width: 1068px;
+  width: 100%;
   height: 0px;
   gap: 0px;
   border: 1px 0px 0px 0px;
@@ -351,7 +379,7 @@ button {
 }
 
 .industry-sub-container {
-  margin-top: 50px;
+  margin: 50px 0 200px;
 }
 
 .industry-sub-container h3 {
@@ -374,8 +402,8 @@ button {
 }
 
 .sign-up {
-  width: 1068px;
-  height: 376px;
+  width: 100%;
+  /*height: 376px;*/
   padding: 90px 75px;
   background: url("./assets/hero_background.png");
   background-size: cover;
@@ -385,10 +413,8 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  position: absolute;
-  left: calc(50% - 1068px / 2);
+  position: relative;
   top: -16%;
-
   text-align: center;
   color: #fff;
 }
@@ -403,12 +429,12 @@ button {
 
 .explore-container {
   background-color: #fff;
-  padding: 80px 75px;
+  padding: 80px 0;
 }
 
 .explore-header {
   margin-bottom: 50px;
-  padding: 0 75px;
+  padding: 0 42px;
 }
 
 .explore-container-default-styles {
@@ -421,18 +447,14 @@ button {
         rgba(30, 111, 170, 0) 60.91%
       )
       border-box;
-
-  max-width: fit-content;
-  margin-inline: auto;
 }
 
 .explore-cards {
   gap: 30px;
+  padding: 0 3rem;
 }
 
 .explore-card {
-  width: 286px;
-  height: 294px;
   border: solid 1px transparent;
   border-radius: 20px;
   background: linear-gradient(#f4f8fa, #f4f8fa) padding-box,
@@ -446,7 +468,6 @@ button {
 
 .explore-card img {
   width: 100%;
-  height: 155px;
 }
 
 .explore-card-text {
@@ -469,7 +490,8 @@ button {
 }
 
 .footer {
-  padding: 100px 108px 40px 108px;
+  padding: 8% 8% 40px 8%;
+  background-color: #fff;
 }
 
 .footer-container {

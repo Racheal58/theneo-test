@@ -8,8 +8,7 @@ body.dark-mode p {
 }
 
 .dark-mode header {
-  background-image: url("./assets/background_curve_dark.png"),
-    url("./assets/daisy_chain.png"), url("./assets/hero_background.png");
+  color: #fff;
 }
 
 .dark-mode h5 {
@@ -20,7 +19,7 @@ body.dark-mode p {
   color: #bcccd8;
 }
 
-.dark-mode .engagament-sections ul {
+.dark-mode .engagement-sections ul {
   color: #fff;
 }
 
@@ -42,19 +41,16 @@ body.dark-mode p {
       border-box;
 }
 
-.dark-mode .industry-container {
-  background: url("./assets/background_curve_dark.png"),
-    linear-gradient(
-      360deg,
-      rgba(75, 179, 255, 0.62) -0.04%,
-      rgba(30, 111, 170, 0) 60.91%
-    );
-  background-repeat: no-repeat;
-  background-size: contain, cover;
-  background-position: bottom;
-  padding-top: 100px;
-  padding-bottom: 127px;
-  position: relative;
+.dark-mode .industry-section {
+  background-color: #0e202d;
+}
+
+.dark-mode .industry-section-bg {
+  background: linear-gradient(
+    360deg,
+    rgba(75, 179, 255, 0.62) -0.04%,
+    rgba(30, 111, 170, 0) 60.91%
+  );
 }
 
 .dark-mode .industry-card {
@@ -91,14 +87,9 @@ body.dark-mode p {
         rgba(30, 111, 170, 0) 60.91%
       )
       border-box;
-
-  max-width: fit-content;
-  margin-inline: auto;
 }
 
 .dark-mode .explore-card {
-  width: 286px;
-  height: 294px;
   border: solid 1px transparent;
   border-radius: 20px;
   background: linear-gradient(
@@ -121,4 +112,8 @@ body.dark-mode p {
 
 .dark-mode .contact a[href^="tel"] {
   color: #fff;
+}
+
+.dark-mode .footer {
+  background-color: #0e202d;
 }
