@@ -58,6 +58,7 @@ header {
   align-items: center;
   font-size: 16px;
   padding: 24px 83px;
+  position: relative;
 }
 
 .nav-links {
@@ -74,6 +75,17 @@ header {
   display: flex;
   gap: 24px;
   list-style-type: none;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  font-size: 2.5rem;
 }
 
 .toggle-container {
@@ -563,25 +575,71 @@ address {
 
 @media screen and (max-width: 1080px) {
   .nav-container {
-    display: flex;
     flex-direction: column;
-    padding: 24px;
+    align-items: flex-start;
+    padding: 1rem;
   }
 
   .nav-links {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f4f8fa;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .nav-links a {
+    color: #275b81;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 2rem;
+  }
+
+  .nav-links.show {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .toggle-container {
+    margin: 0;
   }
 
   header,
   .header-bg {
-    height: 550px;
+    height: 500px;
     padding: 20px;
   }
 
-  .hero-text {
+  /* .hero-text {
     margin: 10px auto;
+  } */
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .sub-hero-text h1 {
+    font-size: 40px;
+  }
+
+  .h2-default {
+    font-size: 35px;
   }
 
   .row {

@@ -15,7 +15,10 @@
     <header>
       <div class="nav-container">
         <img src="./assets/logo.png" alt="logo" class="logo" />
-        <nav class="nav-links">
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <nav class="nav-links" id="nav-links">
           <ul>
             <li>
               <a href="#">Resource</a>
@@ -23,14 +26,16 @@
             <li>
               <a href="#">Trust Center</a>
             </li>
+            <li>
+              <div class="toggle-container">
+                <input type="checkbox" id="toggle" class="toggle-checkbox" />
+                <label for="toggle" class="toggle-slider">
+                  <span class="material-icons-outlined sun">wb_sunny</span>
+                  <span class="material-icons-outlined moon">dark_mode</span>
+                </label>
+              </div>
+            </li>
           </ul>
-          <div class="toggle-container">
-            <input type="checkbox" id="toggle" class="toggle-checkbox" />
-            <label for="toggle" class="toggle-slider">
-              <span class="material-icons-outlined sun">wb_sunny</span>
-              <span class="material-icons-outlined moon">dark_mode</span>
-            </label>
-          </div>
         </nav>
       </div>
       <div class="hero-text">

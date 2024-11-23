@@ -117,3 +117,14 @@ body.dark-mode p {
 .dark-mode .footer {
   background-color: #0e202d;
 }
+
+@media screen and (max-width: 1080px) {
+
+  .dark-mode .nav-links {
+    background-color: #0e202d;
+  }
+
+  .dark-mode .nav-links a {
+    color: #fff;
+  }
+}

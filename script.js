@@ -19,3 +19,8 @@ toggleCheckbox.addEventListener('change', () => {
     localStorage.setItem('theme', 'light'); // Save light mode in localStorage
   }
 });
+
+function toggleMenu() {
+  const menu = document.getElementById('nav-links');
+  menu.classList.toggle('show');
+}
